@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>История</title>
+  <style>
+      body{
+	overflow:hidden; /*Hiding all Stuff */
+	animation-name: changeSkyColor; /* Change Shiny Sky to evening sky and to darkness */  /* Safari and Chrome */
+	animation-duration: 14s; /* Total time of animation */
+	animation-timing-function: linear; /* Just another timing function */
+	animation-iteration-count: infinite; /* Lets repeat sunrise and sunset till world ends :) */
+	animation-direction: alternate; /* Lets do in alternate fashion */
+	-moz-animation-name: changeSkyColor; /* Change Shiny Sky to evening sky and to darkness */  /* Mozzilla */
+	-moz-animation-duration: 14s; /* Total time of animation */
+	-moz-animation-timing-function: linear; /* Just another timing function */
+	-moz-animation-iteration-count: infinite; /* Lets repeat sunrise and sunset till world ends :) */
+	-moz-animation-direction: alternate; /* Lets do in alternate fashion */
+}
+
+
+
+li {
+    list-style-type: none;/*Eliminating all pointers */
+}
+#sun{
+	position:absolute; /* So you can use for animation */
+	width:150px; /* Width of sun */
+	height:150px; /* Height of sun */
+	border-radius:100px; /* So it will be as circle */
+	z-index:3; /* So sun is little above sky :) */
+	left:50%; /* Position of Sun in screen */
+	animation-name: changeSunColor; /* Change Shiny Sun to evening sun and to a moon */  /* Safari and Chrome */
+	animation-duration: 14s; /* Total time of animation */
+	animation-timing-function: linear; /* Just another timing function */
+	animation-iteration-count: infinite; /* Lets repeat sunrise and sunset till world ends :) */
+	animation-direction: alternate; /* Lets do in alternate fashion */
+	-moz-animation-name: changeSunColor; /* Change Shiny Sun to evening sun and to a moon */  /* Mozzilla */
+	-moz-animation-duration: 14s; /* Total time of animation */
+	-moz-animation-timing-function: linear; /* Just another timing function */
+	-moz-animation-iteration-count: infinite; /* Lets repeat sunrise and sunset till world ends :) */
+	-moz-animation-direction: alternate; /* Lets do in alternate fashion */
+}	
+@-webkit-keyframes changeSkyColor /* Safari and Chrome */
+{
+	1%{
+		background: -webkit-linear-gradient(top, rgba(30, 152, 209, 1) 0%,rgb(202, 229, 243) 40%,rgba(125, 185, 232, 0.82) 100%); /* Background of Sky */
+	}
+	11%{
+		background: -webkit-linear-gradient(top, rgba(30, 152, 209, 1) 0%,rgb(202, 229, 243) 40%,rgba(125, 185, 232, 0.82) 100%); /* Background of Sky */
+	}
+	33%  {
+		background: -webkit-linear-gradient(top, rgb(240, 231, 26) 0%,rgb(245, 86, 12) 50%,rgba(197, 127, 81, 0.82) 100%); /* Background of Sky */
+	}
+	66%  {
+		background: -webkit-linear-gradient(top, rgb(34, 33, 3) 0%,rgb(162, 55, 5) 50%,rgb(24, 10, 1) 100%); /* Background of Sky */
+	}
+	100% {
+		background: -webkit-linear-gradient(top, rgba(5, 5, 5, 1) 0%,rgb(54, 55, 56) 40%,rgb(3, 3, 3) 100%); /* Background of Sky */
+	}
+}
+-moz-keyframes changeSkyColor /* Mozzilla */
+{
+
+	1%{
+		background: -moz-linear-gradient(top, rgba(30, 152, 209, 1) 0%,rgb(202, 229, 243) 40%,rgba(125, 185, 232, 0.82) 100%); /* Background of Sky */
+	}
+	33%  {
+		background: -moz-linear-gradient(top, rgb(240, 231, 26) 0%,rgb(245, 86, 12) 50%,rgba(197, 127, 81, 0.82) 100%);/* Background of Sky */
+	}
+	66%  {
+		background: -moz-linear-gradient(top, rgb(34, 33, 3) 0%,rgb(162, 55, 5) 50%,rgb(24, 10, 1) 100%); /* Background of Sky */
+	}
+	100% {
+		background: -moz-linear-gradient(top, rgba(5, 5, 5, 1) 0%,rgb(54, 55, 56) 40%,rgb(3, 3, 3) 100%); /* Background of Sky */
+	}
+}
+li {
+    list-style-type: none;/*Eliminating all pointers */
+}
+
+.hill1 {
+    background-color: rgb(177, 210, 143);/* Background Color of Hill1 */
+    left: -170px; 
+    top: 77%;
+    z-index: 5;
+}
+.hills > div {
+    border-radius: 500px 500px 500px 500px / 250px 250px 250px 250px;
+    height: 700px;
+    position: absolute;
+    width: 70%;
+}
+.hill2 {
+    background-color: rgb(114, 101, 61);/* Background Color of Hill1 */
+    right: -135px;
+    top: 77%;
+    z-index: 5;
+}
+.hill3 {
+    background-color: rgb(167, 134, 49);/* Background Color of Hill1 */
+    top: 86%;
+    z-index: 5;
+    left:-202px;
+}
+@-webkit-keyframes changeSunColor /* Safari and Chrome */
+{
+
+	0%{
+		-webkit-box-shadow: inset 2px 2px 12px 3px yellow,2px 2px 15px 15px yellow; /* For sun rays effect */
+		background-color:white; /* Color of sun */
+		top:2%;
+	}
+	33%  {
+		background-color: orangered; /* Color of sun */
+		top:56%; 
+		-webkit-box-shadow: inset 1px 1px 15px 5px rgba(255, 255, 0, 0.59),1px 1px 15px 5px yellow; /* For sun rays effect */
+	}
+	66%  {
+		background-color: white; /* Color of sun */
+		top:96%; 
+		-webkit-box-shadow: inset 1px 1px 15px 5px white,1px 1px 15px 5px white; /* For sun rays effect */
+	}
+	100% {
+		-webkit-box-shadow: inset 2px 2px 12px 3px white,2px 2px 15px 15px white; /* For Moon rays effect */
+		background-color:white; /* Color of sun */
+		top:32%;
+	}
+}
+@-moz-keyframes changeSunColor /* Mozzilla */
+{
+
+	0%{
+		-moz-box-shadow: inset 2px 2px 12px 3px yellow,2px 2px 15px 15px yellow; /* For sun rays effect */
+		background-color:white; /* Color of sun */
+		top:2%;
+	}
+	33%  {
+		background-color: orangered; /* Color of sun */
+		top:56%; 
+		-moz-box-shadow: inset 1px 1px 15px 5px rgba(255, 255, 0, 0.59),1px 1px 15px 5px yellow; /* For sun rays effect */
+	}
+	66%  {
+		background-color: white; /* Color of sun */
+		top:96%; 
+		-moz-box-shadow: inset 1px 1px 15px 5px white,1px 1px 15px 5px white; /* For sun rays effect */
+	}
+	100% {
+		-moz-box-shadow: inset 2px 2px 12px 3px white,2px 2px 15px 15px white; /* For Moon rays effect */
+		background-color:white; /* Color of sun */
+		top:32%;
+	}
+}
+  </style>
+</head>
+<body>
+<div class="flower">
+
+</div>
+<div id="sun"></div>
+<div class="hills">
+	<div class="hill1"></div>
+	<div class="hill2"></div>
+	<div class="hill3"></div>
+</div>
+
+
+
+
+</body>
